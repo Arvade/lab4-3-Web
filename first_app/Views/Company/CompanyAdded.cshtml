@@ -1,0 +1,12 @@
+@model CompanyAddedViewModel
+
+<h1>Your Company was successfully added!</h1>
+
+
+<h5>some stats:</h5>
+
+<div>Chars in Name: @Model.NumberOfCharsInName</div>
+<div>Chars in Description: @Model.NumberOfCharsInDescription</div>
+<div>
+    Is the company currently hidden: @(Model.IsHidden ? "yes" : "no")
+</div>
