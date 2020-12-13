@@ -1,0 +1,34 @@
+@page
+@model first_app.Views.ItemList
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <h1>Item list</h1>
+
+    <table>
+        <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        </thead>
+        <tbody id="items-source">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
+
+@section Scripts {
+    <script src="~/js/getItems.js"></script>
+}
